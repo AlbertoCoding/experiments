@@ -20,7 +20,7 @@ $ python SP.py
 
 ![Docker Image and write-up thanks to TelecoLabs!](telecolabs.png)
 
-Alberto Rafael Rodríguez Iglesias  www.telecolabs.com
+Alberto Rafael Rodríguez Iglesias - www.telecolabs.com
 
 ## Reconnaissance
 
@@ -80,7 +80,7 @@ Now try also to upload other files like \*.exe or \*.html and do a Cross Site Sc
 
 ## Additional sources
 
-{% embed url="https://www.owasp.org/index.php/Unrestricted\_File\_Upload" %}
+{% embed url="https://www.owasp.org/index.php/Session_Prediction" %}
 
 
 
