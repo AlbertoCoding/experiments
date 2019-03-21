@@ -31,7 +31,7 @@ In the first step, the attacker needs to collect some valid session ID values th
 In addition, the attacker can implement a brute force technique to generate and test different values of session ID until he successfully gets access to the application.
 
 
-![]()
+![](inicio.png)
 
 When start the application we can see that we have upload functionality and this file will be stored on the server. First lets try to upload a valid image to see how the application behaves.
 
