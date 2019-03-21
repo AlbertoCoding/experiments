@@ -19,7 +19,7 @@ $ python SP.py
 {% endhint %}
 
 ![Docker Image and write-up thanks to TelecoLabs!](telecolabs.png)
-Alberto Rafael Rodríguez Iglesias - www.telecolabs.com
+Alberto Rafael Rodríguez Iglesias  www.telecolabs.com
 
 ## Reconnaissance
 
