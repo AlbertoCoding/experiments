@@ -1,4 +1,4 @@
-# KBID 13 - Session Prediction
+# KBID X - Session Prediction
 
 ## Running the app
 
@@ -8,6 +8,10 @@ $ sudo docker pull blabla1337/owasp-skf-lab:file-upload
 
 ```text
 $ sudo docker run -ti -p 127.0.0.1:5000:5000 blabla1337/owasp-skf-lab:file-upload
+```
+Or simply:
+```text
+$ python SP.py
 ```
 
 {% hint style="success" %}
