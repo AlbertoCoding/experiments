@@ -1,4 +1,4 @@
-# KBID 13 - File upload
+# KBID 13 - Session Prediction
 
 ## Running the app
 
