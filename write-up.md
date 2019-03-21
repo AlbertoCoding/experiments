@@ -18,7 +18,7 @@ $ python SP.py
  Now that the app is running let's go hacking!
 {% endhint %}
 
-![Docker Image and write-up thanks to ContraHack!](.gitbook/assets/screen-shot-2019-03-04-at-21.33.32.png)
+![Docker Image and write-up thanks to TelecoLabs!](telecolabs.png)
 
 ## Reconnaissance
 
