@@ -80,7 +80,4 @@ Now try also to upload other files like \*.exe or \*.html and do a Cross Site Sc
 
 ## Additional sources
 
-{% embed url="https://www.owasp.org/index.php/Session_Prediction" %}
-
-
-
+https://www.owasp.org/index.php/Session_Prediction
