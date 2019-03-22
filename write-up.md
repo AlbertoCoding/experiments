@@ -40,6 +40,10 @@ When start the application we can see that we have a "create new user" functiona
 If we inspect the request with an intercepting proxy we can see that the application is performing a POST request that results in a data mutation, storing our file on the server.
 
 
+![](successful_new_user.png)
+
+![](private_space_new_user.png)
+
 
 
 
