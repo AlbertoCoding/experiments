@@ -31,7 +31,7 @@ In the first step, the attacker needs to collect some valid session ID values th
 In addition, the attacker can implement a brute force technique to generate and test different values of session ID until he successfully gets access to the application.
 
 
-![](inicio.PNG)
+![](inicio.png)
 
 When start the application we can see that we have a "create new user" functionality and we will be redirected to out private user space. First let's try to create a new user to see how the application behaves.
 
