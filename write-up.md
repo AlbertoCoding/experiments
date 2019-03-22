@@ -35,7 +35,7 @@ In addition, the attacker can implement a brute force technique to generate and 
 
 When start the application we can see that we have a "create new user" functionality and we will be redirected to out private user space. First let's try to create a new user to see how the application behaves.
 
-![](.gitbook/assets/screen-shot-2019-03-05-at-16.18.19.png)
+![](new_user_req.png)
 
 If we inspect the request with an intercepting proxy we can see that the application is performing a POST request that results in a data mutation, storing our file on the server.
 
