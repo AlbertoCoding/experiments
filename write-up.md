@@ -49,7 +49,7 @@ Now lets try different possibilities for the userID.
 
 Lets try with user02.
 
-![](.gitbook/assets/screen-shot-2019-03-05-at-16.19.03.png)
+![](private_space_admin.png)
 
 As you can see we got access to another user's account. This proves the weak mechanism of sessions management implemented.
 Thanks to it, we can get all the user's private information. In this case this allow us to get admin credentials for the website.
