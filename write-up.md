@@ -45,37 +45,27 @@ If we inspect the request with an intercepting proxy we can see that the applica
 
 ## Exploitation
 
-Now lets try to upload a different file for example a XML file and see how the application will behave.
+Now lets try different possibilities for the userID.
+
+Lets try with user02.
 
 ![](.gitbook/assets/screen-shot-2019-03-05-at-16.19.03.png)
 
-As you can see this file is not allowed to be uploaded. Also when we upload files idealy we want to be able to access the files. Let's see if we can find the uploaded file back in the application.
+As you can see we got access to another user's account. This proves the weak mechanism of sessions management implemented.
+Thanks to it, we can get all the user's private information. In this case this allow us to get admin credentials for the website.
 
-The tool for example we can use for this is called Wfuzz and can be started with the following command:
-
-```bash
-wfuzz -c -z file,/usr/share/wfuzz/wordlist/general/common.txt --hc 404 http://localhost:5000/FUZZ
-```
-
-Unfortunately Wfuzz doesnt find any upload directories where our file is being stored. So lets have a look at the application what other folders are available and are accessible.
-
-![](.gitbook/assets/screen-shot-2019-03-07-at-12.04.08.png)
 
 The application uses different directories to store the stylesheets and images that are being used by the application. Lets see if we can use a path traversel injection to upload our files inside these folders.
 
 ![](.gitbook/assets/screen-shot-2019-03-05-at-16.23.42.png)
 
-We have tried the path traversal directory injection and we got the message back from the application that the file was successfully uploaded. Now lets see if we can access our file.
-
-```text
-http://localhost:5000/static/img/Test.png
-```
 
 And there it is our file was being uploaded successfully in the static/img folder of the application and because this is accessible by the application we can access our file.
 
 ![](.gitbook/assets/screen-shot-2019-03-05-at-16.24.51.png)
 
-Now try also to upload other files like \*.exe or \*.html and do a Cross Site Scripting attack. Maybe also try to upload a very big file and see if the application is also protected agains that type of attack.
+Now try to explore other accounts like user01.
+
 
 ## Additional sources
 
