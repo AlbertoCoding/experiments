@@ -37,38 +37,30 @@ When start the application we can see that we have a "create new user" functiona
 
 ![](new_user_req.png)
 
-If we inspect the request with an intercepting proxy we can see that the application is performing a POST request that results in a data mutation, storing our file on the server.
-
+If we inspect the request with an intercepting proxy (we are using Burp) we can see that the application is performing a POST request to /signup:
 
 ![](successful_new_user.png)
+
+From there we can access our private user's space using a GET request, that we analyze below:
 
 ![](private_space_new_user.png)
 
 
 
-
 ## Exploitation
 
-Now lets try different possibilities for the userID.
+It seems that the only parameter which takes care of which private space we are shown is the userID.
+Now we will try different possibilities for the userID by changing the number to similar ones:
 
 Lets try with user02.
 
 ![](private_space_admin.png)
 
-As you can see we got access to another user's account. This proves the weak mechanism of sessions management implemented.
+As you can see we got access to another user's account whose ID was 02. This proves the weak mechanism of sessions management implemented here.
 Thanks to it, we can get all the user's private information. In this case this allow us to get admin credentials for the website.
 
-
-The application uses different directories to store the stylesheets and images that are being used by the application. Lets see if we can use a path traversel injection to upload our files inside these folders.
-
-![](.gitbook/assets/screen-shot-2019-03-05-at-16.23.42.png)
-
-
-And there it is our file was being uploaded successfully in the static/img folder of the application and because this is accessible by the application we can access our file.
-
-![](.gitbook/assets/screen-shot-2019-03-05-at-16.24.51.png)
-
-Now try to explore other accounts like user01.
+We could keep trying to discover other resources for useful information.
+Let's try to explore other accounts like user01.
 
 
 ## Additional sources
